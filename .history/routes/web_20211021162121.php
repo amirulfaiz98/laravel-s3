@@ -20,7 +20,3 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('/', 'ImageController@create');
-Route::post('/', 'ImageController@store');
-Route::get('/{image}', 'ImageController@show');
